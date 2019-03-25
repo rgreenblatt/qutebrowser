@@ -1621,7 +1621,7 @@ config.bind('ZQ', 'quit')
 config.bind('ZZ', 'quit --save')
 config.bind('[[', 'navigate prev')
 config.bind(']]', 'navigate next')
-config.bind('`', 'enter-mode set_mark')
+config.bind('"', 'enter-mode set_mark')
 config.bind('ad', 'download-cancel')
 config.bind('b', 'set-cmd-text -s :quickmark-load')
 config.bind('cd', 'download-clear')
@@ -1713,6 +1713,8 @@ config.bind('}}', 'navigate next -t')
 
 css = '~/.config/qutebrowser/gruvbox-all-sites.css'
 config.bind('sd', f'config-cycle content.user_stylesheets {css} ""')
+
+config.bind('sz', 'config-cycle zoom.default 67% 100%')
 
 ## Bindings for caret mode
 config.bind('$', 'move-to-end-of-line', mode='caret')
