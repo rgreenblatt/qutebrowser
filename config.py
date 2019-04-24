@@ -1,3 +1,9 @@
+# pylint: disable=C0111
+from qutebrowser.config.configfiles import ConfigAPI  # noqa: F401
+from qutebrowser.config.config import ConfigContainer  # noqa: F401
+config = config  # type: ConfigAPI # noqa: F821 pylint: disable=E0602,C0103
+c = c  # type: ConfigContainer # noqa: F821 pylint: disable=E0602,C0103
+
 ## Aliases for commands. The keys of the given dictionary are the
 ## aliases, while the values are the commands they map to.
 ## Type: Dict
