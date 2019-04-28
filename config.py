@@ -156,6 +156,7 @@ c.content.proxy_dns_requests = True
 ## List of user stylesheet filenames to use.
 ## Type: List of File, or File
 c.content.user_stylesheets = []
+c.content.cookies.accept = 'all'
 
 c.downloads.position = 'top'
 c.downloads.remove_finished = 300000
