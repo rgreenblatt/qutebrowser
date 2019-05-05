@@ -509,7 +509,7 @@ c.url.yank_ignored_parameters = ['ref', 'utm_source', 'utm_medium',
 
 ## Default zoom level.
 ## Type: Perc
-c.zoom.default = '67%'
+c.zoom.default = '100%'
 
 ## Available zoom levels.
 ## Type: List of Perc
@@ -529,7 +529,7 @@ config.bind('  o', 'tab-focus 9')
 config.bind('  p', 'tab-focus -1')
 css = '~/.config/qutebrowser/gruvbox-all-sites.css'
 config.bind('sd', f'config-cycle content.user_stylesheets {css} ""')
-config.bind('sz', 'config-cycle zoom.default 67% 100%')
+config.bind('sz', 'config-cycle zoom.default 100% 67%')
 
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
