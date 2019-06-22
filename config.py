@@ -8,7 +8,8 @@ c = c  # type: ConfigContainer # noqa: F821 pylint: disable=E0602,C0103
 ## aliases, while the values are the commands they map to.
 ## Type: Dict
 c.aliases = {'wq': 'quit --save', 'q': 'close', 'w': 'session-save',
-             'wqa': 'quit --save', 'qa': 'quit'}
+             'wqa': 'quit --save', 'qa': 'quit',
+             'mpv': 'spawn --userscript ~/scripts/view_in_mpv'}
 
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
