@@ -528,9 +528,13 @@ config.bind('  u', 'tab-focus 7')
 config.bind('  i', 'tab-focus 8')
 config.bind('  o', 'tab-focus 9')
 config.bind('  p', 'tab-focus -1')
-css = '~/.config/qutebrowser/gruvbox-all-sites.css'
-config.bind('sd', f'config-cycle content.user_stylesheets {css} ""')
+CSS = '~/.config/qutebrowser/gruvbox-all-sites.css'
+config.bind('sd', f'config-cycle content.user_stylesheets {CSS} ""')
 config.bind('sz', 'config-cycle zoom.default 100% 67%')
+BASE_SPAWN_FZF = 'spawn --userscript ~/scripts/floating_st'
+config.bind(' o', BASE_SPAWN_FZF + ' fzf_qutebrowser_url')
+config.bind(' O', BASE_SPAWN_FZF + ' fzf_qutebrowser_url -t')
+config.bind(' c', BASE_SPAWN_FZF + ' fzf_qutebrowser_cmd')
 
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
